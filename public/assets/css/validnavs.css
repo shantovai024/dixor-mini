@@ -3942,7 +3942,7 @@ nav.validnavs .dropdown.megamenu-fw .dropdown-menu {
 	}
 
 	.megamenu-style-two.column-three .col-menu-wrap .menu-cal-items {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.megamenu-style-two.column-four .col-menu-wrap {
