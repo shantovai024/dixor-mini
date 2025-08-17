@@ -17,41 +17,22 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
     return (
         <>
             <ul className={`nav navbar-nav ${navbarPlacement ? navbarPlacement : ""}`} data-in="fadeInDown" data-out="fadeOutUp">
-                <li className="dropdown megamenu-fw megamenu-style-two column-three">
-                    <Link href="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Home</Link>
-                    <ul className="dropdown-menu megamenu-content" role="menu">
-                        <li>
-                            <div className="col-menu-wrap">
-                                <div className="menu-cal-items">
-                                    <div className="col-menu">
-                                        <h4>Homepage Dark</h4>
-                                        <ul className="menu-col">
-                                            <li><Link href="/">Home Main</Link></li>
-                                            <li><Link href="/home-4">Modern Agency</Link></li>
-                                            <li><Link href="/home-2">Creative Agency</Link></li>
-                                            <li><Link href="/home-3">Startup Agency</Link></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-menu">
-                                        <h4>Homepage Light</h4>
-                                        <ul className="menu-col">
-                                            <li><Link href="/home-1-light">Home Main</Link></li>
-                                            <li><Link href="/home-4-light">Modern Agency</Link></li>
-                                            <li><Link href="/home-2-light">Creative Agency</Link></li>
-                                            <li><Link href="/home-3-light">Startup Agency</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="megamenu-banner">
-                                    <div className="thumb">
-                                        <Image src={banner1} alt="Image Not Found" />
-                                        <Link href="#" className="popup-youtube video-button" onClick={() => setOpen(true)}>
-                                            <i className="fas fa-play" />
-                                        </Link>
-                                    </div>
-                                    <h4>Intro Video</h4>
-                                </div>
-                            </div>
+                <li className="dropdown">
+                    <Link href="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Homes</Link>
+                    <ul className="dropdown-menu">
+                        <li><Link href="/">Home Main</Link></li>
+                        <li><Link href="/home-4">Modern Agency</Link></li>
+                        <li><Link href="/home-2">Creative Agency</Link></li>
+                        <li><Link href="/home-3">Startup Agency</Link></li>
+                        <li className="dropdown">
+                            <Link href="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Homes Light
+                                Version</Link>
+                            <ul className="dropdown-menu">
+                                <li><Link href="/home-1-light">Home Main</Link></li>
+                                <li><Link href="/home-4-light">Modern Agency</Link></li>
+                                <li><Link href="/home-2-light">Creative Agency</Link></li>
+                                <li><Link href="/home-3-light">Startup Agency</Link></li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
